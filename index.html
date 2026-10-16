@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lilt プライバシーポリシー</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --text: #1d1d1f;
+      --muted: #6e6e73;
+      --accent: #06c;
+      --rule: rgba(0, 0, 0, 0.12);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1c1e;
+        --text: #f5f5f7;
+        --muted: #a1a1a6;
+        --accent: #2997ff;
+        --rule: rgba(255, 255, 255, 0.14);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 56px 22px 80px;
+    }
+
+    .content {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      letter-spacing: 0.01em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4.2vw, 3rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+    }
+
+    .updated {
+      margin: 18px 0 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .lead {
+      margin: 28px 0 0;
+      font-size: clamp(1rem, 1.6vw, 1.12rem);
+      line-height: 1.65;
+      color: var(--text);
+    }
+
+    .section {
+      padding-top: 34px;
+      margin-top: 34px;
+      border-top: 1px solid var(--rule);
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.28rem;
+      line-height: 1.35;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0 0 16px;
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin: 0 0 8px;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.95em;
+      background: rgba(127, 127, 127, 0.14);
+      padding: 0.12em 0.38em;
+      border-radius: 0.4em;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="content">
+      <p class="eyebrow">Lilt</p>
+      <h1>Lilt プライバシーポリシー</h1>
+      <p class="updated">最終更新日: 2026年10月13日</p>
+      <p class="lead">Lilt（以下、「本アプリ」といいます。）は、家計管理・貯金管理を目的としたアプリです。本ポリシーでは、本アプリにおける情報の取り扱いについて説明します。</p>
+
+      <section class="section">
+        <h2>1. 取得・保存する情報</h2>
+        <p>本アプリは、以下の情報を端末内に保存します。</p>
+        <ul>
+          <li>収入、支出、固定費、分割払い、貯金調整などの家計データ</li>
+          <li>カテゴリ名、支払元名、メモなど、家計管理に関連する設定情報</li>
+          <li>共有家計簿で使用する表示名</li>
+          <li>記録を登録した場所の位置情報（位置情報の利用を許可した場合のみ）</li>
+          <li>アプリ内設定</li>
+        </ul>
+        <p>これらの情報は、ユーザーが本アプリの機能を利用するために使用されます。開発者がこれらの情報を取得することはありません。</p>
+      </section>
+
+      <section class="section">
+        <h2>2. 位置情報</h2>
+        <p>本アプリは、ユーザーが位置情報の利用を許可した場合に限り、次のタイミングで現在地を1回取得します。</p>
+        <ul>
+          <li>アプリの記録の登録画面を開いたとき</li>
+          <li>ショートカット（ロック画面や Siri など）から記録を登録したとき</li>
+        </ul>
+        <p>いずれもユーザーの操作をきっかけとした1回限りの取得で、継続的に現在地を追跡したり、ユーザーが操作していないときに取得したりすることはありません。ショートカットからの記録では、現在地をすぐに取得できない場合、場所を付けずに記録します。</p>
+        <ul>
+          <li>取得した位置情報は、現在の日時で記録を登録したときに、その記録の場所として保存します。過去の日付で登録した記録には保存しません。保存した場所は、同じ場所で次に記録するときに、よく使うカテゴリを自動で選ぶために使用します。</li>
+          <li>記録の詳細に場所の名称を表示するため、位置情報を Apple の地図サービスに送信して名称を取得することがあります。</li>
+          <li>位置情報は、端末内と、iCloud 同期・iCloud バックアップを利用している場合はユーザー自身の iCloud にのみ保存されます。共有家計簿のほかのメンバーに送信・表示されることはありません。</li>
+          <li>位置情報の利用は、iPhone の「設定」（アプリ内の「アクセス許可」画面から開けます）でいつでも停止できます。なお、「場所からカテゴリを自動選択」をオフにした場合、カテゴリの自動選択は行われませんが、位置情報の利用を許可している間は、記録の場所の保存は継続されます。</li>
+          <li>記録ごとの位置情報は、記録の詳細画面から削除できます。</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>3. 情報の外部送信について</h2>
+        <p>本アプリは、ユーザーの家計データを開発者のサーバーへ送信しません。</p>
+        <p>ただし、以下の機能をユーザーが利用した場合は、必要な範囲で Apple 等の外部サービスまたは OS の機能を利用します。</p>
+        <ul>
+          <li><code>iCloud 同期</code><br> Lilt Plus の対象機能として、家計データ（位置情報を含みます）をユーザー自身の iCloud に保存し、同じ Apple ID でサインインしている端末間で同期します。</li>
+          <li><code>iCloud バックアップ</code><br> Lilt Plus の対象機能として、家計データ（位置情報を含みます）のバックアップをユーザー自身の iCloud Drive に保存します。</li>
+          <li><code>共有家計簿</code><br> 共有家計簿に登録した記録、カテゴリ、予算などのデータと表示名は、Apple の iCloud（CloudKit）を通じて、その共有家計簿に参加しているメンバーの端末と共有されます。メンバーを招待する際は、招待相手を特定するために、入力されたメールアドレスまたは電話番号が Apple の仕組みで使用されます。共有家計簿の更新を他の端末に知らせるため、Apple のプッシュ通知の仕組みを利用します。</li>
+          <li><code>連絡先</code><br> 共有家計簿の招待相手を連絡先から選ぶ場合や、参加メンバーを連絡先に登録された名前で表示する場合に、端末の連絡先を参照します。連絡先の情報を開発者が取得したり、招待していない相手に連絡したりすることはありません。連絡先へのアクセスを許可しなくても、共有家計簿は利用できます。</li>
+          <li><code>App Store での購入</code><br> Lilt Plus の購入、更新状況の確認、購入の復元、および開発者への応援（チップ）には Apple の StoreKit を利用します。決済情報を本アプリが取得することはありません。</li>
+          <li><code>Face ID / パスコードによる保護</code><br> アプリロック機能では、Apple の認証機能を利用します。生体情報そのものを本アプリが取得・保存することはありません。</li>
+          <li><code>ダッシュボード洞察</code><br> 対応環境では、ダッシュボード内の月次洞察の生成に Apple のオンデバイス処理を利用する場合があります。処理は端末上で行われ、家計データを外部へ送信することはありません。</li>
+          <li><code>CSV の書き出し・読み込み、画像の共有</code><br> ユーザーが明示的に操作した場合に限り、CSV ファイルの書き出し・読み込みや、月のハイライト画像の共有を行います。共有先はユーザーが選択します。</li>
+          <li><code>不具合の報告</code><br> ユーザーが不具合を報告する場合、端末のメール機能を使用して送信します。メールには、ユーザーが入力した内容に加えて、不具合の調査に必要な情報（端末の機種名、iOS とアプリのバージョン、言語・地域とタイムゾーン、端末の空き容量、アプリの設定状態、記録やカテゴリなどの件数、最終バックアップ日時、共有家計簿の同期の記録（データの識別番号やエラーの内容）など）が含まれます。記録の金額や内容そのものは含まれません。メールは送信前に内容を確認でき、送信するかどうかはユーザーが選べます。</li>
+          <li><code>お知らせの取得</code><br> アプリ内のお知らせを表示するため、お知らせの配信ページ（GitHub Pages）から情報を取得します。この際、家計データなどの個人情報は送信しません。</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>4. 収集しない情報</h2>
+        <p>本アプリは、以下を目的とした情報の収集・外部送信を行いません。</p>
+        <ul>
+          <li>広告配信</li>
+          <li>第三者広告 SDK の利用</li>
+          <li>開発者独自のアクセス解析・行動追跡</li>
+          <li>ユーザーの家計データや位置情報の販売</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>5. データの管理</h2>
+        <p>本アプリ内のデータ管理は、主にユーザーの端末内で行われます。ユーザーは、アプリ内機能を通じてデータの入力、修正、削除、CSV 入出力、バックアップ作成を行えます。</p>
+        <p>iCloud 同期、iCloud バックアップ、共有家計簿を利用する場合、保存先および管理は Apple が提供する iCloud の仕組みに依存します。iCloud の取り扱いについては、<a href="https://www.apple.com/jp/legal/internet-services/icloud/jp/terms.html" target="_blank" rel="noreferrer">Apple の iCloud 利用規約</a>および<a href="https://www.apple.com/jp/legal/privacy/jp/" target="_blank" rel="noreferrer">Apple のプライバシーポリシー</a>もあわせてご確認ください。</p>
+        <p>共有家計簿のデータは参加メンバー間で共有されるため、ほかのメンバーの端末にも保存されます。共有家計簿から脱退した場合や、オーナーが共有家計簿を削除した場合でも、既にほかのメンバーの端末に保存されたデータやアーカイブが残る場合があります。</p>
+        <p>Lilt Plus に含まれる iCloud 同期およびバックアップ機能は、ユーザーデータの保存、完全性、復元可能性を保証するものではありません。通信環境、端末設定、iCloud の状態、Apple が提供するサービスの挙動等により、同期の遅延・未反映、バックアップ作成の失敗、復元不能が発生する場合があります。</p>
+      </section>
+
+      <section class="section">
+        <h2>6. 未成年の利用</h2>
+        <p>本アプリは、特定の年齢層を対象として個人情報を収集することを目的としていません。</p>
+      </section>
+
+      <section class="section">
+        <h2>7. 本ポリシーの変更</h2>
+        <p>本ポリシーは、機能追加や法令等の変更に応じて改定されることがあります。重要な変更がある場合は、必要に応じて本アプリまたは配布ページ上でお知らせします。</p>
+      </section>
+
+      <section class="section">
+        <h2>8. 免責事項</h2>
+        <p>本アプリの利用にあたっては、内容の正確性、完全性、有用性、継続的な提供について万全を期していますが、これらを保証するものではありません。</p>
+        <p>本アプリの利用または利用不能により生じた損害について、開発者は責任を負いません。これには、アプリ内データの消失、バックアップや復元の失敗、計算結果や表示内容の誤り、端末やOS、外部サービスとの連携不具合、その他直接的または間接的に生じた損害を含みます。</p>
+        <p>共有家計簿に関しては、iCloud/CloudKit、通信環境、端末やOSの状態、参加メンバーの操作その他の事情により、同期や共有、データの表示・保存・変更などに予期しない問題が生じる場合があります。共有家計簿の利用または利用不能に関連してユーザーまたは第三者に生じた損害、不利益その他の問題について、開発者は責任を負いません。</p>
+        <p>ユーザーは、必要に応じてご自身の判断でデータの確認、書き出し、バックアップ等を行うものとします。</p>
+      </section>
+
+      <section class="section">
+        <h2>9. お問い合わせ</h2>
+        <p>本アプリに関するお問い合わせは、以下の連絡先までお願いします。</p>
+        <ul>
+          <li>開発者: Yutaro Kojima</li>
+          <li>連絡先: <a href="mailto:takes-interim77@icloud.com">takes-interim77@icloud.com</a></li>
+        </ul>
+      </section>
+
+      <p class="footer">Copyright © Lilt</p>
+    </article>
+  </main>
+</body>
+</html>
